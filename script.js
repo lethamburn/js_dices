@@ -17,6 +17,9 @@ const rollTheDice = () => {
   document
     .querySelector(".img2")
     .setAttribute("src", "./assets/diceAnimation.gif");
+
+  document.querySelector(".result").innerHTML = "Tirando los dados...";
+
   setTimeout(() => {
     let randomNumberOne = Math.floor(Math.random() * 6) + 1;
     let randomNumberTwo = Math.floor(Math.random() * 6) + 1;
